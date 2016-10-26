@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)http://www.fpga-arm.com/technic_article/2007/0828/control-471.html -->
+<HTML><HEAD><TITLE>ad9850中文资料|ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gbk">
+<META content=传感与控制资料列表,FPGA,CPLD,DSP,ARM，单片机设计文章,技术文章 name=keywords>
+<META 
+content="ad9850中文资料|ad9850 pdf及ad9850的应用内容介绍：&#13;&#10;1 AD9850简介&#13;&#10;随着数字技术的飞速发展，用数字 ..." 
+name=description>
+<META content="MSHTML 6.00.2900.3157" name=GENERATOR><LINK href="/favicon.ico" 
+rel="shortcut icon"><LINK 
+href="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/style.css" type=text/css 
+rel=stylesheet>
+<SCRIPT language=javascript 
+src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/config.js"></SCRIPT>
+
+<SCRIPT language=javascript 
+src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/common.js"></SCRIPT>
+
+<SCRIPT language=javascript 
+src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/prototype.js"></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class=header>
+<TABLE class=bg_login cellSpacing=0 cellPadding=0 width=980>
+  <TBODY>
+  <TR>
+    <TD align=middle width=200><!--时间-->
+      <SCRIPT language=JavaScript 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/time.js"></SCRIPT>
+    </TD>
+    <TD align=right width=38><A 
+      href="http://www.fpga-arm.com/technic_article/rss.php?catid=15" 
+      target=_blank><IMG 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/rss.gif" 
+      border=0></A> </TD>
+    <TD align=right width=*><!--会员登录-->
+      <SCRIPT language=javascript 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/login.htm"></SCRIPT>
+    </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=980 align=center>
+  <TBODY>
+  <TR>
+    <TD align=middle width=260 height=90><A 
+      href="http://www.fpga-arm.com/"><IMG 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/logo.gif"></A></TD>
+    <TD align=middle width=620>
+      <SCRIPT language=JavaScript 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/ad.htm"></SCRIPT>
+    </TD>
+    <TD width=100>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD>【<A id=StranLink>繁体中文</A>】</TD></TR>
+        <TR>
+          <TD>【<A 
+            onclick="this.style.behavior='url(#default#homepage)';this.setHomePage ('http://www.FPGA-ARM.com/');" 
+            href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html#">设为首页</A>】</TD></TR>
+        <TR>
+          <TD>【<A 
+            onclick="window.external.addFavorite('http://www.fpga-arm.com/','海纳电子资讯网')" 
+            href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html#">加入收藏</A>】</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!--频道列表-->
+<DIV id=Whatever align=center>
+<UL class=TabBarLevel1 id=TabPage1>
+  <LI><A href="http://www.fpga-arm.com/">首页</A> </LI>
+  <LI><A class=white href="http://www.fpga-arm.com/news/">新闻动态</A> </LI>
+  <LI class=Selected id=Tabi><A class=white 
+  href="http://www.fpga-arm.com/technic_article/">技术文章</A> </LI>
+  <LI><A class=white href="http://www.fpga-arm.com/down/">下载中心</A> </LI>
+  <LI><A class=white href="http://www.fpga-arm.com/refer/">留言咨询</A> 
+</LI></UL></DIV><!--频道下属栏目列表-->
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD class=submenu><A class=white 
+      href="http://www.fpga-arm.com/technic_article/">技术文章首页</A> | <A 
+      class=white 
+      href="http://www.fpga-arm.com/technic_article/embed-10.html">嵌入式系统</A> | 
+      <A class=white 
+      href="http://www.fpga-arm.com/technic_article/POWER/">电源技术</A> | <A 
+      class=white 
+      href="http://www.fpga-arm.com/technic_article/interface/">接口技术</A> | <A 
+      class=white href="http://www.fpga-arm.com/technic_article/mem/">存储器应用</A> 
+      | <A class=white 
+      href="http://www.fpga-arm.com/technic_article/eda/">EDA技术</A> | <A 
+      class=white 
+      href="http://www.fpga-arm.com/technic_article/control/">传感与控制</A> | <A 
+      class=white href="http://www.fpga-arm.com/technic_article/meter/">电测仪表</A> 
+      | <A class=white 
+      href="http://www.fpga-arm.com/technic_article/photoelectricity/">显示光电</A> 
+      | <A class=white 
+      href="http://www.fpga-arm.com/technic_article/analog/">模拟技术</A> | <A 
+      class=white 
+      href="http://www.fpga-arm.com/technic_article/system/">综合应用技术</A> | <A 
+      class=white href="http://www.fpga-arm.com/technic_article/IC/">IC资料</A> | 
+      <A class=white 
+      href="http://www.fpga-arm.com/technic_article/type.php">分类</A> | <A 
+      class=white href="http://www.fpga-arm.com/technic_article/special/">专题</A> 
+      | <A class=white 
+      href="http://www.fpga-arm.com/guestbook/index.php?keyid=5">留言本</A> | <A 
+      class=white 
+      href="http://www.fpga-arm.com/technic_article/contribute.php">投稿</A> | <A 
+      class=white 
+      href="http://www.fpga-arm.com/technic_article/search.php">搜索</A> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=main>
+<TABLE cellSpacing=0 cellPadding=0 width=980>
+  <TBODY>
+  <TR>
+    <TD height=10></TD></TR></TBODY></TABLE>
+<SCRIPT type=text/javascript>
+function fontZoom(size)
+{
+   $('content').style.fontSize=size+'px';
+}
+</SCRIPT>
+<IFRAME align=center marginWidth=0 marginHeight=0 
+src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/ggtuijie1.htm" 
+frameBorder=0 width=728 scrolling=no height=90></IFRAME>
+<TABLE cellSpacing=0 cellPadding=0 width=980>
+  <TBODY>
+  <TR>
+    <TD class=content vAlign=top width=760><!--位置导航-->
+      <DIV class=position_1>当前位置：<A 
+      href="http://www.fpga-arm.com/technic_article/">技术文章首页</A> &gt;&gt; <A 
+      href="http://www.fpga-arm.com/technic_article/control/">传感与控制</A> &gt;&gt; 
+      ad9850中文资料|ad9850 pdf及ad9850的应用</DIV><!--主标题-->
+      <H1>ad9850中文资料|ad9850 pdf及ad9850的应用 </H1><!--副标题--><!--文章属性-->
+      <DIV id=property>2007-08-28&nbsp;&nbsp;作者：<A class=member_url 
+      href="http://www.fpga-arm.com/member/member.php?username=cjb"></A>&nbsp;&nbsp;来源：<A 
+      href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html#" 
+      target=_blank>互连网</A>&nbsp;&nbsp;浏览次数：<SPAN 
+      id=hits>225</SPAN>&nbsp;&nbsp;文字大小：【<A 
+      href="javascript:fontZoom(16)">大</A>】【<A 
+      href="javascript:fontZoom(14)">中</A>】【<A 
+      href="javascript:fontZoom(12)">小</A>】</DIV><!--引用地址-->
+      <DIV class=introduce><STRONG>简介：</STRONG>ad9850中文资料|ad9850 
+      pdf及ad9850的应用内容介绍： 1 
+      AD9850简介随着数字技术的飞速发展，用数字控制方法从一个参考频率源产生多种频率的技术，即直接数字频率合成（DDS）技术异军突起。美国AD公司推出的高 
+      ...</DIV>
+      <TABLE align=left border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-5328795987975450";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_ad_type = "text_image";
+//2007-04-21: 336*280的大矩形
+google_ad_channel = "6636959577";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "000000";
+//-->
+</SCRIPT>
+
+            <SCRIPT 
+            src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/show_ads.js" 
+            type=text/javascript>
+</SCRIPT>
+          </TD></TR></TBODY></TABLE>
+      <TABLE align=right border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-5328795987975450";
+google_ad_width = 250;
+google_ad_height = 250;
+google_ad_format = "250x250_as";
+google_ad_type = "text_image";
+//2007-05-04: 250*250
+google_ad_channel = "9864907685";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "000000";
+//-->
+</SCRIPT>
+
+            <SCRIPT 
+            src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/show_ads.js" 
+            type=text/javascript>
+</SCRIPT>
+          </TD></TR></TBODY></TABLE><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+      <TABLE align=right border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-5328795987975450";
+google_ad_width = 250;
+google_ad_height = 250;
+google_ad_format = "250x250_as";
+google_ad_type = "text_image";
+//2007-05-04: 250*250
+google_ad_channel = "9864907685";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "000000";
+//-->
+</SCRIPT>
+
+            <SCRIPT 
+            src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/show_ads.js" 
+            type=text/javascript>
+</SCRIPT>
+          </TD></TR></TBODY></TABLE>
+      <DIV class=content_text id=content>
+      <P>ad9850中文资料|ad9850 pdf及ad9850的应用内容介绍：</P>
+      <P style="TEXT-INDENT: 0px"><STRONG>1 AD9850简介<IMG height=254 hspace=1 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/20070828105909822.gif" 
+      width=220 align=right vspace=1 border=0></STRONG></P>
+      <P>随着数字技术的飞速发展，用数字控制方法从一个参考频率源产生多种频率的技术，即直接数字频率合成（DDS）技术异军突起。美国AD公司推出的高集成度频率合成器<STRONG>AD9850</STRONG>便是采用DDS技术的典型产品之一。</P>
+      <P><STRONG>AD9850</STRONG>采用先地蝗CMOS工艺，其功耗在3.3V供电时仅为155mW，扩展工业级温度范围为-40～80℃，采用28脚SSOP表面封装形式。AD9850的引脚排列如图1所示，图2为其组成框图。图2中层虚线内是一个完整的可编程DDS系统，外层虚线内包含了AD9850的主要组成部分。</P>
+      <P><STRONG>AD9850</STRONG>内含可编程DDS系统和高速比较器，能实现全数字编程控制的频率合成。可编程DDS系统的核心是相位累加器，它由一个加法器和一个N位相位寄存器组成，N一般为24～32。每来一个外部参考时钟，相位寄存器便以步长M递加。相位寄存器的输出与相位控制字相加后可输入到正弦查询表地址上。正弦查询表包含一个正弦波周期的数字幅度信息，每一个地址对应正弦波中0°～360°范围的一个相位点。查询表把输入地址的相位信息映射成正弦波幅度信号，然后驱动DAC以输出模式量。</P>
+      <P>相位寄存器每过2N/M个外部参考时钟后返回到初始状态一次，相位地正弦查询表每消费品一个循环也回到初始位置，从而使整个DDS系统输出一个正弦波。输出的正弦波周期To=Tc2N/M，频率fout=Mfc/2N，Tc、fc分别为外部参考时钟的周期和频率。</P>
+      <P><STRONG>AD9850</STRONG>采用32位的相位累加器将信号截断成14位输入到正弦查询表，查询表的输出再被截断成10位后输入到DAC，DAC再输出两个互补的电流。DAC满量程输出电流通过一个外接电阻RSET调节，调节关系为ISET=32(1.148V/RSET)，RSET的典型值是3.9kΩ。将DAC的输出经低通滤波后接到AD9850内部的高速比较器上即可直接输出一个抖动很小的方波。其系统功能如图3所示。<IMG 
+      height=108 hspace=1 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/20070828105912568.gif" 
+      width=301 align=left vspace=1 border=0></P>
+      <P>AD9850在接上精密时钟源和写入频率相位控制字之间后就可产生一个频率和相位都可编程控制的模拟正弦波输出，此正弦波可直接用作频率信号源或经内部的高速比较器转换为方波输出。在125MHz的时钟下，32位的频率控制字可使AD9850的输出频率分辨率达0.0291Hz；并具有5位相位控制位，而且允许相位按增量180°、90°、45°、22.5°、11.25°或这些值的组合进行调整。</P>
+      <P style="TEXT-INDENT: 0px"><STRONG>2 AD9850的控制字与控制时序</STRONG></P>
+      <P><STRONG>AD9850</STRONG>有40位<STRONG>控制字</STRONG>，32位用于频率控制，5位用于相位控制。1位用于电源休眠（Power 
+      down）控制，2位用于选择工作方式。这40位控制字可通过并行方式或串行方式输入到AD9850，图4是控制字并行输入的控制时序图，在并行装入方式中，通过8位总线A0…D7将可数据输入到寄存器，在重复5次之后再在FQ-UD上升沿把40位数据从输入寄存器装入到频率/相位数据寄存器（更新DDS输出频率和相位），同时把地址指针复位到第一个输入寄存器。接着在W-CLK的上升沿装入8位数据，并把指针指向下一个输入寄存器，连续5个W-CLK上升沿后，<IMG 
+      height=187 hspace=1 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/20070828105913258.gif" 
+      width=244 align=right vspace=1 
+      border=0>W-CLK的边沿就不再起作用，直到复位信号或FQ-UD上升沿把地址指针复位到第一个寄存器。在串行输入方式，W-CLK上升沿把25引脚的一位数据串行移入，当移动40位后，用一个FQ-UD脉冲即可更新输出频率和相位。图5是相应的控制字串行输入的控制时序图。</P>
+      <P><STRONG>AD9850</STRONG>的复位（RESET）信号为高电平有效，且脉冲宽度不小于5个参考时钟周期。AD9850的参考时钟频率一般远高于单片机的时钟频率，因此AD9850的复位（RESET）端可与单片机的复位端直接相连。</P>
+      <P>值得一提的是：用于选择工作方式的两个控制位，无论并行还是串行最好都写成00，并行时的10、01和串行时的10、01、11都是工厂测试用的保留控制字，不慎使用可能导致难以预料的后果。</P>
+      <P style="TEXT-INDENT: 0px"><STRONG>3 单片机与AD9850的接口</STRONG></P>
+      <P><STRONG>AD9850</STRONG>有两种与微机并行打印口相连的评估版，并配有Windows下运行的软件，可以作为应用参考，但运用单片机实现对DDS的控制与微机实现的控制相比，具有编程控制简便、接口简单、成本低，容易实现系统小型化等优点，因此普遍采用MCS51单片机作为控制核心来向AD9850发送控制字。</P>
+      <P>单片机与AD9850的接口既要客商用并行方式，也可采用串行方式，但为了充分发挥芯片的高速性能，应在单片机资源允许的情况下尽可能选择并行方式，本文重点介绍其并行方式的接口。</P>
+      <P style="TEXT-INDENT: 0px">3.1 I/O方式并行接口<IMG height=139 hspace=1 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/20070828105913535.gif" 
+      width=301 align=right vspace=1 border=0></P>
+      <P><STRONG>AD9850的</STRONG>I/O方式的并行接口电路比较简单，但占用单片机资源相对较多，图8是I/O方式并行接口的电路图，AD9850的数据线D0～D7与P1口相连，FQ-UD和W-CLK分别与P3.0（10引脚）和P3.1（11引脚）相连，所有的时序关系均可通过软件控制实现。</P>
+      <P>将DDS控制字从高至低存放于30H至34H中，发送控制字的程序清单如下：</P>
+      <P>MOV R0，#05H</P>
+      <P>MOV R1，#30H</P>
+      <P>DD：MOV P1，@R1<IMG height=130 hspace=1 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/20070828105913454.gif" 
+      width=269 align=right vspace=1 border=0></P>
+      <P>SETB P3.1</P>
+      <P>CLR P3.1</P>
+      <P>INC R1</P>
+      <P>DJNZ R0，DD</P>
+      <P>SETB P3.0</P>
+      <P>CLR P3.0</P>
+      <P>END</P>
+      <P>在<STRONG>AD9850的</STRONG>程序中，每将一字节的数据送到P1口后，必须将P3.1（W-CLK）置高。在其上升沿，AD9850接收到P1口相连的数据线上的数据，然后将P3.1置低，并准备下一字节的发送，连续发送5个字节后，须将P3.0（FQ-UD）再次置高，以使AD9850根据则输入的控制字更改频率和相位输出，随后再置P3.0为低，准备下一组发送。单片机的P3.0、P3.1引脚为串行口，当被占用时，W-CLK和FQ-UD引脚也可与其它I/O脚相连，这时需要修改相应的发送程序。<IMG 
+      height=232 hspace=1 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/20070828105916554.gif" 
+      width=253 align=right vspace=1 border=0></P>
+      <P style="TEXT-INDENT: 0px">3.2 总线方式并行接口</P>
+      <P>总线方式并行接口占用的单片机资源较少，在这种方式下，AD9850仅作为一扩展芯片而占用RAM的一段地址，必须时也可以只占用一个地址。图7是总线方式并行接口的电路原理图。同样将DDS控制字从高至低存放于30H至34H中，发送控制字的程序清单如下：</P>
+      <P>MOV R0，#05H</P>
+      <P>MOV R1，#30H</P>
+      <P>MOV DPTR，#0700H</P>
+      <P>DD：MOV A，@R1</P>
+      <P>MOVX @DPTR，A</P>
+      <P>INC R1</P>
+      <P>DJNZ R0，DD</P>
+      <P>MOVX A，@DPTR<IMG height=208 hspace=1 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/20070828105917474.gif" 
+      width=348 align=right vspace=1 border=0></P>
+      <P>END</P>
+      <P>AD9850的W-CLK和FQ-UD信号都是上升沿有效，用MOVX 
+      @DPTR，A指令向AD9850传送控制字时，由74F138将高八位地址的低三位译码，其输出经反相并与反相后的信号相与得到一上升沿送至AD9850的W-CLK脚，此时已送到总线上的数据将被AD9850接收，连续五次将40位的控制字全部发送以后，用MOVA 
+      A，@DPTR指令产生FQ-UD信号，使AD9850更改输出频率和相位，此时读入到单片机内的数据实际上无任何意义。图7中AD9850的地址为0700H。</P>
+      <P>上述两种接口方式经实际应用证明：工作可靠，效果良好。单片机与AD9850的串行接口可参照有关资料进行设计。上述接口电路和程序也适用于与AD9850脚对脚兼容的AD9851，值得注意的是：AD9851的控制字与<STRONG>AD9850控制字</STRONG>个中别位的定义稍有区别，编程时应予以注意。</P>
+      <P><STRONG>AD9850相关资料：</STRONG></P>
+      <P>点击下载<A 
+      href="http://www.fpga-arm.com/down/2007/0828/down_59.html">ad9850中文资料</A><STRONG><A 
+      href="http://www.fpga-arm.com/uploadfile/PDF/ad9850中文资料.pdf"></A></STRONG></P>
+      <P>点击下载<A 
+      href="http://www.fpga-arm.com/down/2007/0828/down_60.html">ad9850 
+      pdf</A><STRONG><A 
+      href="http://www.fpga-arm.com/uploadfile/PDF/AD9850.pdf"></A></STRONG></P>
+      <P><A class=l onmousedown="return clk(0,'','','res','3','')" 
+      href="http://www.fpga-arm.com/technic_article/2007/0416/jiekou_368.html" 
+      target=_blank><U><FONT color=#0000cc>基于SA605和</FONT><FONT 
+      color=#cc0033>AD9850</FONT><FONT 
+      color=#0000cc>的接收电路设计及应用</FONT></U></A></P></DIV>
+      <SCRIPT type=text/javascript>
+function ImgZoom(Id)//重新设置图片大小 防止撑破表格
+{
+var w = $(Id).width;
+var m = 550;
+if(w < m)
+{
+return;
+}
+else
+{
+var h = $(Id).height;
+$(Id).height = parseInt(h*m/w);
+$(Id).width = m;
+}
+}
+window.onload = function()
+{
+var Imgs = $("content").getElementsByTagName("img");
+var i=0;
+for(;i<Imgs.length;i++)
+{
+ImgZoom(Imgs[i]);
+}
+}
+</SCRIPT>
+<!--自定义字段//-->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center>
+        <TBODY></TBODY></TABLE><!--自定义字段\\--><!--分页-->
+      <DIV class=td_center></DIV>
+      <H3>责任编辑：<A class=member_url 
+      href="http://www.fpga-arm.com/member/member.php?username=cjb">cjb</A></H3>
+      <DIV class=mar_10><SPAN class=font_1>本文引用地址：</SPAN>&nbsp;<SPAN 
+      class=border_2><A 
+      href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html">http://www.fpga-arm.com/technic_article/2007/0828/control-471.html</A></SPAN> 
+      </DIV><!--上下文-->
+      <DIV class=border_1 id=pre_and_next></DIV><BR>
+      <DIV class=iconbox id=par>
+      <FORM id=sendmail name=sendmail action=/mail/sendmail.php><INPUT 
+      type=hidden value="推荐《ad9850中文资料|ad9850 pdf及ad9850的应用》" name=title> <INPUT 
+      type=hidden 
+      value="<a href=http://www.fpga-arm.com/technic_article/2007/0828/control-471.html target=_blank>ad9850中文资料|ad9850 pdf及ad9850的应用<br/>http://www.fpga-arm.com/technic_article/2007/0828/control-471.html</a>" 
+      name=content> </FORM><A class=comment_icon 
+      href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html#comment">发表评论</A>　<A 
+      class=favorites_icon 
+      href="javascript:window.external.addFavorite(window.location,'ad9850中文资料|ad9850%20pdf及ad9850的应用')">加入收藏</A>　<A 
+      class=friend_icon href="javascript:$('sendmail').submit();">告诉好友</A>　<A 
+      class=print_icon href="javascript:window.print();">打印本页</A>　<A 
+      class=close_icon href="javascript:window.close()">关闭窗口</A>　<A 
+      class=top_icon 
+      href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html#top">返回顶部</A></DIV><!--相关文章列表-->
+      <DIV class=cat_title>
+      <DIV class=cat_name>相关文章</DIV>
+      <DIV class=cat_url><A class=more 
+      href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html#"></A></DIV></DIV>
+      <SCRIPT 
+      src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/list_js.htm" 
+      type=text/javascript></SCRIPT>
+    </TD>
+    <TD width=10>　</TD>
+    <TD class=right_bg vAlign=top width=210>
+      <DIV class=rightcats>
+      <H1>最新文章</H1>
+      <H2><A class=more 
+      href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html#">更多</A></H2></DIV>
+      <TABLE class=tag_box cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于AD603的一种结构简单性能优良的AGC电路 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-483.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">基于AD603的一种结构简单...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=AD603在振动信号采集系统中的应用 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-482.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">AD603在振动信号采集系统...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=可变增益放大器AD603在雷达系统中的应用 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-481.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">可变增益放大器AD603在雷...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title="ad9850中文资料|ad9850 pdf及ad9850的应用" 
+            href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html" 
+            target=_blank><SPAN style="FONT-WEIGHT: bold">ad9850中文资料|ad9850 
+            ...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于S3C2410的CMOS图像传感器数据采集系统 
+            href="http://www.fpga-arm.com/technic_article/2007/0820/control-465.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">基于S3C2410的CMOS图像传...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=DS18B20-数字温度传感器简介 
+            href="http://www.fpga-arm.com/technic_article/2007/0707/control-438.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">DS18B20-数字温度传感器简介</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于GMS87C1404的干洗机自动控制系统设计 
+            href="http://www.fpga-arm.com/technic_article/2006/1029/control_417.html" 
+            target=_blank>基于GMS87C1404的干洗机...</A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于ISP芯片的大型多花案彩灯控制系统的设计 
+            href="http://www.fpga-arm.com/technic_article/2007/0429/control_416.html" 
+            target=_blank>基于ISP芯片的大型多花案...</A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于智能PWM控制的机车制动控制单元的设计 
+            href="http://www.fpga-arm.com/technic_article/2006/1231/control_415.html" 
+            target=_blank>基于智能PWM控制的机车制...</A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=汽车传动轴防尘罩PLC控制系统的设计与实现 
+            href="http://www.fpga-arm.com/technic_article/2007/0618/control_414.html" 
+            target=_blank>汽车传动轴防尘罩PLC控制...</A> </TD></TR></TBODY></TABLE>
+      <DIV class=rightcats>
+      <H1>推荐文章</H1>
+      <H2><A class=more 
+      href="http://www.fpga-arm.com/technic_article/search.php?catid=15&amp;posid=1&amp;search=1">更多</A></H2></DIV>
+      <TABLE class=tag_box cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于AD603的一种结构简单性能优良的AGC电路 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-483.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">基于AD603的一种结构简单...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=AD603在振动信号采集系统中的应用 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-482.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">AD603在振动信号采集系统...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=可变增益放大器AD603在雷达系统中的应用 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-481.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">可变增益放大器AD603在雷...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title="ad9850中文资料|ad9850 pdf及ad9850的应用" 
+            href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html" 
+            target=_blank><SPAN style="FONT-WEIGHT: bold">ad9850中文资料|ad9850 
+            ...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于S3C2410的CMOS图像传感器数据采集系统 
+            href="http://www.fpga-arm.com/technic_article/2007/0820/control-465.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">基于S3C2410的CMOS图像传...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=DS18B20-数字温度传感器简介 
+            href="http://www.fpga-arm.com/technic_article/2007/0707/control-438.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">DS18B20-数字温度传感器简介</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于GMS87C1404的干洗机自动控制系统设计 
+            href="http://www.fpga-arm.com/technic_article/2006/1029/control_417.html" 
+            target=_blank>基于GMS87C1404的干洗机...</A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于ISP芯片的大型多花案彩灯控制系统的设计 
+            href="http://www.fpga-arm.com/technic_article/2007/0429/control_416.html" 
+            target=_blank>基于ISP芯片的大型多花案...</A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于智能PWM控制的机车制动控制单元的设计 
+            href="http://www.fpga-arm.com/technic_article/2006/1231/control_415.html" 
+            target=_blank>基于智能PWM控制的机车制...</A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=汽车传动轴防尘罩PLC控制系统的设计与实现 
+            href="http://www.fpga-arm.com/technic_article/2007/0618/control_414.html" 
+            target=_blank>汽车传动轴防尘罩PLC控制...</A> </TD></TR></TBODY></TABLE>
+      <DIV class=rightcats>
+      <H1>热点文章</H1>
+      <H2><A class=more 
+      href="http://www.fpga-arm.com/technic_article/search.php?catid=15&amp;ordertype=3&amp;search=1">更多</A></H2></DIV>
+      <TABLE class=tag_box cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title="ad9850中文资料|ad9850 pdf及ad9850的应用" 
+            href="http://www.fpga-arm.com/technic_article/2007/0828/control-471.html" 
+            target=_blank><SPAN style="FONT-WEIGHT: bold">ad9850中文资料|ad9850 
+            ...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于S3C2410的CMOS图像传感器数据采集系统 
+            href="http://www.fpga-arm.com/technic_article/2007/0820/control-465.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">基于S3C2410的CMOS图像传...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=基于AD603的一种结构简单性能优良的AGC电路 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-483.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">基于AD603的一种结构简单...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=AD603在振动信号采集系统中的应用 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-482.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">AD603在振动信号采集系统...</SPAN></A> </TD></TR>
+        <TR>
+          <TD width="100%" height=24>· <A class=tag_title_link 
+            title=可变增益放大器AD603在雷达系统中的应用 
+            href="http://www.fpga-arm.com/technic_article/2007/0903/control-481.html" 
+            target=_blank><SPAN 
+            style="FONT-WEIGHT: bold">可变增益放大器AD603在雷...</SPAN></A> 
+      </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<SCRIPT src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/show_js.htm" 
+type=text/javascript></SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width=980>
+  <TBODY>
+  <TR>
+    <TD height=10></TD></TR></TBODY></TABLE>
+<DIV class=footer>
+<UL>
+  <LI class=footer_border_1>
+  <DIV class=footer_border_2><A href="http://www.fpga-arm.com/link/" 
+  target=_blank>友情链接</A> | <A href="http://www.fpga-arm.com/page/joinus.html" 
+  target=_blank>诚聘英才</A> | <A href="http://www.fpga-arm.com/page/aboutus.html" 
+  target=_blank>关于我们</A> | <A href="http://www.fpga-arm.com/page/announce.html" 
+  target=_blank>版权声明</A> | <A href="http://www.fpga-arm.com/page/contactus.html" 
+  target=_blank>联系我们</A> | <A href="http://www.fpga-arm.com/page/ads.html" 
+  target=_blank>广告服务</A> </DIV>
+  <LI>
+  <P><STRONG>海纳电子资讯网</STRONG>专业提供<STRONG>IC芯片中文资料下载</STRONG>及各种电子资讯,站长邮箱：caojb05#163.com(请将“#”换成“@”).本站部分资料来自互联网，如果，我们侵范了您的版权，请来信通知，我们会尽快的删除相关的资料。欢迎网友对本站的建设和发展提出意见和建议，我们每信必复。谢谢大家的支持。</P>
+  <SCRIPT language=javascript 
+  src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/1025646.js" 
+  type=text/javascript></SCRIPT>
+  <NOSCRIPT></NOSCRIPT>
+  <LI>
+  <SCRIPT src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/stat.htm" 
+  type=text/javascript></SCRIPT>
+  &nbsp;&nbsp;&nbsp;&nbsp;<A href="http://www.miibeian.gov.cn/" 
+  target=_blank>鄂ICP备***号</A>&nbsp;&nbsp;&nbsp;&nbsp;<A 
+  href="http://www.phpcms.cn/license/license.php?domain=www.fpga-arm.com" 
+  target=_blank>Powered by Phpcms 2007</A> </LI></UL></DIV>
+<SCRIPT language=javascript 
+src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/click.htm"></SCRIPT>
+
+<SCRIPT src="ad9850中文资料ad9850 pdf及ad9850的应用-技术文章-海纳电子资讯网.files/Std_StranJF.Js" 
+type=text/javascript></SCRIPT>
+</DIV></BODY></HTML>
