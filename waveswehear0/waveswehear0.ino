@@ -24,7 +24,7 @@ This example code is in the public domain.
  const int port_ad9850_w_clk    =9;  //P2.2口接ad9850的w_clk脚/PIN7
  const int port_ad9850_fq_up    =10;  //P2.1口接ad9850的fq_up脚/PIN8
  const int port_ad9850_rest     =11;  //P2.0口接ad9850的rest脚/PIN12
- const int port_ad9850_bit_data =12;  //P1.7口接ad9850的D7脚/PIN25
+ const int port_ad9850_bit_data =0;  //P1.7口接ad9850的D7脚/PIN25
 
 // notes in the melody:
 int melody[] = {
@@ -43,6 +43,7 @@ float distance;
 float T;
 
 void setup() {
+        
         Serial.begin(9600);
 	//串行写1000Hz程序
         digitalWrite(port_ad9850_w_clk,LOW);
@@ -189,7 +190,7 @@ Serial.println(ad9850_bit_data);
 ad9850_w_clk=1;
 ad9850_w_clk=0;
 }
-//移入始能
+//移入始能 刷新AD9850工作状态 同时复位寄存器指针，准备下一次数据装入
 //ad9850_fq_up=1;
 digitalWrite(port_ad9850_fq_up,HIGH);
 delayMicroseconds(10);
