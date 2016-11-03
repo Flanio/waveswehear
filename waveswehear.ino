@@ -6,7 +6,7 @@
  circuit:
  * 16-ohm speaker on AD9850 PIN ZOUT1
  * AD9850+ARDUINO+SR04
- 
+
  created 27 Oct 2016
  modified 30 Aug 2011
  by Jun Chen in SXKJG
@@ -17,14 +17,21 @@ This code is hosted on github.
 */
 
 /*
-DONE:AD9850+ARDUINO+SR04
-Arduino控制AD9850输出特定频率正弦波，频率根据SR04传回的值处理后获得，输出电压0-1V之间
+
+DONE:1AD9850+ARDUINO+SR04
+     2显示,通过1602+I2C总线模块来进行实时频率数据显示。采用动态显示输出。这里需要用到
+      LiquidCrystal_I2C.h和Wire.h两个类库。 LiquidCrystal_I2C类库在1602文件夹中
+      Arduino控制AD9850输出特定频率正弦波，频率根据SR04传回的值处理后获得，输出电压0-1V之间
+
 TODO:1默认状态下，频率输出值应设置为多少？ 理论上应该关闭端口输出，通过控制控制字节实现
 需要查手册，如何使用参考SetFrequency()方法。
      2通过什么样的方法来做用户接口？  怎样开启功能？自动关闭功能时间设定为多少？
      3功率放大器选择？
-     4显示？
+
 */
+
+  #include <Wire.h>
+  #include <LiquidCrystal_I2C.h>
 
   //AD9850 DDS test
   //AD9850  for Arduino+DDS9850
@@ -45,7 +52,22 @@ TODO:1默认状态下，频率输出值应设置为多少？ 理论上应该关�
   int sensorPin = A0;
   int sensorValue = 0;
 
+
+  //初始化1602,设置地址为0x3f，16个字符，两行显示
+  // set the LCD address to 0x27 for a 20 chars and 4 line display
+  LiquidCrystal_I2C lcd(0x3f,16,2);
+
 void setup() {
+  //初始化1602
+//###########################################################
+  lcd.init();                      // initialize the lcd
+  lcd.init();
+  lcd.backlight();                 //设置背光，非必要，可通过硬件设置
+  lcd.setCursor(6,0);              //设置光标位置
+  lcd.print("FREQ");               //汉子不能输出
+  lcd.setCursor(12,1);             //设置光标位置
+  lcd.print("HZ");                 //频率单位
+//###########################################################
   // 初始化串口通信及连接SR04的引脚
      Serial.begin(9600);
   // 设置端口模式
@@ -94,7 +116,17 @@ void loop() {
         {          }
         else{
         //tone(8,T,250);  tone(pin, frequency, duration)
-	SetFrequency(T);
+        //清楚1602所有显示内容，主要目的是清楚多余的零
+        lcd.clear();
+        lcd.setCursor(6,0);
+        lcd.print("FREQ");
+        lcd.setCursor(12,1);
+        lcd.print("HZ");
+        lcd.setCursor(5,1);
+        lcd.print(int(T));
+
+        //设置输出频率
+      	SetFrequency(T);
         delay(100);  //采样时间间隔  ms
         //noTone(8);
         }
